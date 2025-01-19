@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shanjusha Kulasekaran - UI/UX Designer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #34dcde, #34dcde, #34dcde, #fbf9f9, #fbf9f9); /* Gradient with five colors */
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Basic Reset */
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            background: linear-gradient(45deg, #34dcde, #34dcde, #34dcde, #fbf9f9, #fbf9f9); /* Gradient with five colors */
+            color: rgb(17, 16, 16);
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        header .linkedin {
+            font-size: 1.5rem;
+            color: #0c0c0c;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header .linkedin img {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+        }
+
+        #profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            margin-bottom: 40px;
+        }
+
+        header:hover #profile-img {
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #2F3A56;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .job, .project {
+            background-color: #fbfcff;
+            margin-bottom: 30px;
+            padding: 30px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+s
+        .job:hover, .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .job h3, .project h3 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .job p, .project p {
+            font-size: 1rem;
+            color: #3a8de0;
+            line-height: 1.6;
+        }
+
+        /* Skills Section */
+        .skills ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .skills li {
+            margin: 10px;
+        }
+
+        .skill-icon {
+            width: 50px;  /* Adjusted size */
+            height: 50px; /* Adjusted size */
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .skills li:hover .skill-icon {
+            transform: scale(1.1);
+        }
+
+        /* Contact Form */
+        #contact input, #contact textarea, #contact button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        #contact button {
+            background-color: #0b0b0b;
+            color: rgb(107, 194, 234);
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        #contact button:hover {
+            background-color: #f9c60e;
+        }
+
+        footer {
+            background-color: #090909;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img id="profile-img" src="shanjusha.jpeg" alt="Shanjusha Kulasekaran">
+        <h1>Shanjusha Kulasekaran</h1>
+        <p>UI/UX Designer</p>
+        <p>Email: <a href="mailto:skulasekaran@hawk.iit.edu">skulasekaran@hawk.iit.edu</a></p>
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/shanjusha-k-64b997206/" target="_blank">
+                <img src="linkedIn.png" alt="LinkedIn Logo">
+                LinkedIn
+            </a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate UI/UX Designer with expertise in user-centered design, usability testing, wireframing, prototyping, and visual design. I have worked with various organizations to enhance user experiences and optimize design strategies, ensuring functionality across multiple devices and platforms.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>
+                    <a href="https://www.figma.com/community/file/944644388375583520" target="_blank">
+                        <img src="figma.png" alt="Figma" title="Figma" class="skill-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.sketch.com/docs/" target="_blank">
+                        <img src="sketch.png" alt="Sketch" title="Sketch" class="skill-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://developer.adobe.com/xd/uxp/" target="_blank">
+                        <img src="Adobexd.png" alt="Adobe XD" title="Adobe XD" class="skill-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://dribbble.com/InVisionApp" target="_blank">
+                        <img src="invision.jpg" alt="InVision" title="InVision" class="skill-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blog.logrocket.com/ux-design/ux-documentation-guide-best-practices-template/" target="_blank">
+                        <img src="UX.jpg" alt="UX Research" title="UX Research" class="skill-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://uxmag.com/articles/how-prototyping-is-replacing-documentation" target="_blank">
+                        <img src="prototyping.png" alt="Prototyping" title="Prototyping" class="skill-icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="job">
+                <h3>UI/UX Intern - EZ-AI LLC</h3>
+                <p><strong>Wilmington, Delaware (Oct 2024 - Present)</strong></p>
+                <ul>
+                    <li>Spearheaded the design and enhancement of customer interfaces for a conversational AI chatbot platform.</li>
+                    <li>Prototyped and wireframed instinctive workflows, improving usability by 30%.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>UX Intern - Atem Corp</h3>
+                <p><strong>Santa Clara, California (Nov 2023 - Jan 2024)</strong></p>
+                <ul>
+                    <li>Collaborated with teams to incorporate cultural nuances into UI design.</li>
+                    <li>Developed adaptive layouts for mobile, tablet, and desktop platforms, improving cross-device design by 40%.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>UI/UX Intern - Fisher Technologies</h3>
+                <p><strong>Chennai, India (Mar 2022 - Jun 2022)</strong></p>
+                <ul>
+                    <li>Designed wireframes, interactive prototypes, and high-fidelity designs for various software projects.</li>
+                    <li>Developed a design system to standardize UI elements, improving project delivery timelines.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Library Management System</h3>
+                <p>Developed and implemented a Python-based system for automating library operations, reducing manual workload by 87%.</p>
+            </div>
+            <div class="project">
+                <h3>Predicting Citywide Traffic using Spatiotemporal Neural Networks</h3>
+                <p>Developed a predictive system to forecast traffic, improving traffic management and reducing congestion by 20%.</p>
+            </div>
+            <div class="project">
+                <h3>Weight Loss Management Website</h3>
+                <p>Designed a responsive website focused on user engagement, increasing customer retention by 30%.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="mailto:skulasekaran@hawk.iit.edu" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Shanjusha Kulasekaran. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
