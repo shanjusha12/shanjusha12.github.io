@@ -1,0 +1,348 @@
+/* Apple-Inspired UI Design */
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Body Styling - Live Background */
+body {
+    overflow-x: hidden;
+    background: url('5200512.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    line-height: 1.6;
+    animation: fadeIn 1s ease-in-out, liveBackground 15s infinite alternate ease-in-out;
+}
+
+/* Live Background Effect */
+@keyframes liveBackground {
+    0% { background-position: center center; }
+    50% { background-position: center top; }
+    100% { background-position: center center; }
+}
+
+/* App Container for Sliding Sections */
+.app-container {
+    display: flex;
+    width: 300vw;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Screen Sections */
+.screen {
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 50px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.navbar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+/* Sections Layout */
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    opacity: 0.8;
+}
+
+/* Primary Button */
+.btn-primary {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(180deg, #007aff, #0051a8);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(0, 122, 255, 0.5);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(180deg, #0051a8, #003c7a);
+    transform: scale(1.1);
+}
+
+/* Add Space Between Sections */
+.about-section, 
+.skills-section, 
+.experience-section, 
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 15px;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 80px; /* Adds spacing between sections */
+}
+
+/* Adjusted Transparency for Sections */
+.skills-section, .experience-section, .projects-section {
+    background: rgba(255, 255, 255, 0.05); /* Increased transparency */
+    backdrop-filter: blur(10px); /* Reduced blur for more visibility */
+    border-radius: 12px;
+    padding: 30px 25px;
+    max-width: 700px;
+    width: 80%;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Stronger Hover Effects with Bright Colors */
+.skills-section:hover {
+    box-shadow: 0 6px 20px rgba(0, 122, 255, 0.6);
+    transform: scale(1.05);
+}
+
+.experience-section:hover {
+    box-shadow: 0 6px 20px rgba(155, 89, 182, 0.6);
+    transform: scale(1.05);
+}
+
+.projects-section:hover {
+    box-shadow: 0 6px 20px rgba(46, 204, 113, 0.6);
+    transform: scale(1.05);
+}
+
+/* Adjust text color for readability */
+.skills-section p, .experience-section p, .projects-section p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* About Section */
+.about-section p {
+    font-size: 1.2rem;
+    max-width: 750px;
+    text-align: justify;
+}
+
+/* Skills & Experience Layout */
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 650px;
+}
+
+/* Reduce Image Size for About and Work Experience Sections */
+.about-section img {
+    max-width: 55%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.experience-section img {
+    max-width: 55%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-section img:hover, 
+.experience-section img:hover {
+    transform: scale(1.05);
+}
+
+/* Project Images */
+.project-item img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.project-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Icons - Adjusted Size for Gmail & LinkedIn Logos */
+.contact-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icons img {
+    width: 18px;  /* Adjusted size */
+    height: 18px; /* Maintain aspect ratio */
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-icons img {
+        width: 16px;  /* Smaller size for mobile */
+        height: 16px;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .about-section, 
+    .skills-section, 
+    .experience-section, 
+    .projects-section {
+        padding: 50px 15px;
+        margin-bottom: 50px;
+    }
+
+    .skills-grid, .experience-list, .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-section img, .experience-section img {
+        max-width: 75%;
+    }
+
+    /* Adjust Transparent Backdrop Sections for Mobile */
+    .skills-section, .experience-section, .projects-section {
+        padding: 25px 15px;
+        width: 85%;
+        max-width: 650px;
+        backdrop-filter: blur(7px);
+    }
+}
+/* Resume Page Styling */
+.resume-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
+
+.resume-section {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+/* Typing Effect */
+.typing-effect {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    min-height: 50px;
+}
+
+/* Button */
+.btn-primary {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(180deg, #007aff, #0051a8);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(0, 122, 255, 0.5);
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(180deg, #0051a8, #003c7a);
+    transform: scale(1.1);
+}
+

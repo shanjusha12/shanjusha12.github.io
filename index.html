@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanjusha's Portfolio</title>
+    <meta name="description" content="UI/UX Designer | User Research | Prototyping">
+    <meta property="og:title" content="Shanjusha's Portfolio">
+    <meta property="og:description" content="Showcasing UI/UX projects, skills, and experience.">
+    <meta property="og:image" content="https://framerusercontent.com/images/your-profile-image.jpeg">
+    <meta property="og:url" content="https://www.shanjusha.design/">
+    <meta name="twitter:card" content="summary_large_image">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="logo">Shanjusha Kulasekaran</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li> <!-- Updated Resume Link -->
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="fade-in">Shanjusha Kulasekaran</h1>
+                <p class="fade-in">UI/UX Designer | User Research | Prototyping</p>
+                <a href="#projects" class="btn-primary fade-in">View My Work</a>
+            </div>
+        </section>
+        
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <img src="shanjusha.jpeg" alt="UI/UX Design" class="section-image">
+            <p>Pursuing MS in Information Technology and Management at Illinois Institute of Technology, Chicago.</p>
+            <p>Passionate about creating intuitive, user-friendly designs and interactive digital experiences.</p>
+        </section>
+        
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Design Tools</h3>
+                    <p>Adobe Creative Suite, Sketch, Figma, InVision, Zeplin, Marvel</p>
+                </div>
+                <div class="skill-category">
+                    <h3>UI/UX Techniques</h3>
+                    <p>User Research, Wireframing, Prototyping, Usability Testing, Visual Design</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <p>HTML, CSS, JavaScript, Python (Basic)</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experience" class="experience-section">
+            <h2>Work Experience</h2>
+            <img src="student-work.jpg" alt="Work Experience" class="section-image">
+            <div class="experience-list">
+                <div class="experience-item">
+                    <h3>UI/UX Intern | EZ-AI LLC</h3>
+                    <p>October 2024 – Present | Wilmington, Delaware</p>
+                    <ul>
+                        <li>Designed intuitive workflows reducing task time by 30%.</li>
+                        <li>Improved user satisfaction by 20% through usability testing.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>UX Intern | Atem Corp</h3>
+                    <p>November 2023 – January 2024 | Santa Clara, CA</p>
+                    <ul>
+                        <li>Developed adaptive layouts ensuring 40% better design consistency.</li>
+                        <li>Reduced page load time by 15% through UI optimizations.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects-section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <img src="HOW-DO-YOU-DESIGN-A-LIBRARY-MANAGEMENT-SYSTEM-min.png" alt="Project" class="project-image">
+                    <h3>Library Management System</h3>
+                    <p>Developed a Python-based LMS, reducing manual workload by 87%.</p>
+                </div>
+                <div class="project-item">
+                    <img src="Urban-Planning-Blog-Video-Analytics-Empowers-Cities-scaled-1.jpeg" alt="Project" class="project-image">
+                    <h3>Predicting Citywide Traffic</h3>
+                    <p>Designed predictive dashboards to reduce congestion by 20%.</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <div class="contact-icons">
+                <a href="mailto:skulasekaran@hawk.iit.edu" target="_blank">
+                    <img src="google-logo.png" alt="Email">
+                </a>
+                <a href="https://www.linkedin.com/in/shanjusha-k-64b997206/" target="_blank">
+                    <img src="linkedIn.jpg" alt="LinkedIn">
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p>© 2024 Shanjusha Kulasekaran | UI/UX Portfolio</p>
+    </footer>
+    <script>
+        // Typing Effect for Resume Header
+        const text = "Shanjusha Kulasekaran - UI/UX Designer";
+        let index = 0;
+        function typeEffect() {
+            if (index < text.length) {
+                document.querySelector(".typing-effect").textContent += text.charAt(index);
+                index++;
+                setTimeout(typeEffect, 100);
+            }
+        }
+        document.addEventListener("DOMContentLoaded", typeEffect);
+    </script>
+    
+
+</body>
+</html>

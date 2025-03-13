@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanjusha's Resume</title>
+    <meta name="description" content="UI/UX Designer | User Research | Prototyping">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">Shanjusha Kulasekaran</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a id="resume-btn" class="active">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Resume Section -->
+    <main class="resume-container">
+        <h1 class="typing-effect"></h1>
+
+        <section class="resume-section">
+            <h2>Education</h2>
+            <p><strong>Master of Science in Information Technology and Management</strong> – Illinois Institute of Technology, Chicago (May 2024)</p>
+            <p><strong>Bachelor of Technology in Information Technology</strong> – SRM Institute of Science & Technology, Chennai (June 2022)</p>
+        </section>
+
+        <section class="resume-section">
+            <h2>Skills</h2>
+            <p><strong>Design Tools:</strong> Adobe Creative Suite (Photoshop, Illustrator, InDesign, After Effects), Sketch, Figma</p>
+            <p><strong>UI/UX & Graphic Design:</strong> Branding, Typography, Visual Hierarchy, Layout, Web & Mobile UI</p>
+            <p><strong>Programming & Web:</strong> HTML, CSS, Python (Basic)</p>
+        </section>
+
+        <section class="resume-section">
+            <h2>Work Experience</h2>
+            <p><strong>UI/UX Intern – EZ-AI LLC</strong> (Oct 2024 - Present, Wilmington, Delaware)</p>
+            <ul>
+                <li>Designed marketing materials, presentations, and social media graphics.</li>
+                <li>Developed intuitive user interfaces, improving customer engagement.</li>
+            </ul>
+
+            <p><strong>UX Intern – Atem Corp</strong> (Nov 2023 - Jan 2024, Santa Clara, CA)</p>
+            <ul>
+                <li>Designed and implemented brand-consistent UI elements.</li>
+                <li>Developed responsive web designs for desktop and mobile.</li>
+            </ul>
+        </section>
+
+        <section class="resume-section">
+            <h2>Projects</h2>
+            <p><strong>Weight Loss Management Website</strong> – Designed a responsive web interface, increasing engagement by 30%.</p>
+            <p><strong>Citywide Traffic Prediction</strong> – Designed data visualization dashboards for urban planners.</p>
+            <p><strong>Library Management System</strong> – Led the UI/UX design, improving user retention.</p>
+        </section>
+
+        <section class="resume-section">
+            <h2>Certifications & Awards</h2>
+            <p>📜 Adobe Certified Professional – Visual Design (Illustrator)</p>
+            <p>📜 Google UX Design Professional Certificate</p>
+            <p>🏆 Awarded Best UI/UX Project at SRM Institute of Science & Technology</p>
+        </section>
+
+        <section class="resume-section">
+            <h2>About Me</h2>
+            <p>Passionate about UI/UX design, branding, and creating user-friendly digital experiences.</p>
+            <p>Active in design communities and continuously learning new trends.</p>
+        </section>
+
+        <!-- Download Resume -->
+        <a href="Shanjusha_Kulasekaran_Resume.pdf" download class="btn-primary">Download Resume</a>
+    </main>
+
+    <script>
+        // Typing Effect for Resume Header
+        const text = "Shanjusha Kulasekaran - UI/UX Designer";
+        let index = 0;
+        function typeEffect() {
+            if (index < text.length) {
+                document.querySelector(".typing-effect").textContent += text.charAt(index);
+                index++;
+                setTimeout(typeEffect, 100);
+            }
+        }
+        document.addEventListener("DOMContentLoaded", typeEffect);
+    </script>
+
+</body>
+</html>
