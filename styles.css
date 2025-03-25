@@ -181,10 +181,32 @@ section {
 }
 
 /* About Section */
+.about-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.section-image {
+    max-width: 140px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 280px;
+}
+
 .about-section p {
     font-size: 1.2rem;
     max-width: 750px;
     text-align: justify;
+    margin-bottom: 1rem;
+    line-height: 1.6;
 }
 
 /* Skills & Experience Layout */
@@ -252,10 +274,7 @@ section {
         width: 16px;  /* Smaller size for mobile */
         height: 16px;
     }
-}
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
     .navbar {
         padding: 15px 30px;
     }
@@ -298,6 +317,7 @@ section {
         backdrop-filter: blur(7px);
     }
 }
+
 /* Resume Page Styling */
 .resume-container {
     max-width: 900px;
@@ -345,4 +365,3 @@ section {
     background: linear-gradient(180deg, #0051a8, #003c7a);
     transform: scale(1.1);
 }
-
