@@ -4,26 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shanjusha's Resume</title>
-    <meta name="description" content="UI/UX Designer | User Research | Prototyping">
+    <meta name="description" content="UI/UX Designer | Branding | Motion Graphics">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
-
-    <!-- Navigation Bar -->
     <header class="navbar">
         <div class="logo">Shanjusha Kulasekaran</div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-
+                <li><a id="resume-btn" class="active">Resume</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Resume Section -->
     <main class="resume-container">
         <h1 class="typing-effect"></h1>
 
@@ -36,51 +32,59 @@
         <section class="resume-section">
             <h2>Skills</h2>
             <p><strong>Design Tools:</strong> Adobe Creative Suite (Photoshop, Illustrator, InDesign, After Effects), Sketch, Figma</p>
-            <p><strong>UI/UX & Graphic Design:</strong> Branding, Typography, Visual Hierarchy, Layout, Web & Mobile UI</p>
-            <p><strong>Programming & Web:</strong> HTML, CSS, Python (Basic)</p>
+            <p><strong>Graphic & UI/UX Design:</strong> Branding, Typography, Color Theory, Visual Hierarchy, Layout Principles, Prototyping, Web & Mobile UI Design</p>
+            <p><strong>Motion Graphics & Video:</strong> Adobe After Effects, Premiere Pro (Basic Proficiency)</p>
+            <p><strong>Programming:</strong> HTML, CSS, Python (Basic)</p>
+            <p><strong>Collaboration & PM:</strong> Agile Workflow, Cross-functional Teamwork, Design System Management</p>
         </section>
 
         <section class="resume-section">
             <h2>Work Experience</h2>
-            <p><strong>UI/UX Intern – EZ-AI LLC</strong> (Oct 2024 - Present, Wilmington, Delaware)</p>
+            <p><strong>UI/UX Intern – Tymon Global</strong> (Oct 2024 – Present, McKinney, Texas)</p>
             <ul>
-                <li>Designed marketing materials, presentations, and social media graphics.</li>
-                <li>Developed intuitive user interfaces, improving customer engagement.</li>
+                <li>Designed marketing materials, social graphics, and web/mobile interfaces.</li>
+                <li>Improved customer satisfaction by 20% through iterative usability testing.</li>
+                <li>Created prototypes and collaborated on seamless front-end implementation.</li>
             </ul>
 
-            <p><strong>UX Intern – Atem Corp</strong> (Nov 2023 - Jan 2024, Santa Clara, CA)</p>
+            <p><strong>UX Intern – Atem Corp</strong> (Nov 2023 – Jan 2024, Santa Clara, CA)</p>
             <ul>
-                <li>Designed and implemented brand-consistent UI elements.</li>
-                <li>Developed responsive web designs for desktop and mobile.</li>
+                <li>Built cohesive UI elements, ensured brand consistency.</li>
+                <li>Developed responsive designs and led testing sessions.</li>
+            </ul>
+
+            <p><strong>UI/UX Intern – Fisher Technologies</strong> (Mar 2022 – Jun 2022, Chennai, India)</p>
+            <ul>
+                <li>Created branding assets and promotional motion graphics.</li>
+                <li>Developed internal design systems improving design consistency.</li>
             </ul>
         </section>
 
         <section class="resume-section">
             <h2>Projects</h2>
-            <p><strong>Weight Loss Management Website</strong> – Designed a responsive web interface, increasing engagement by 30%.</p>
-            <p><strong>Citywide Traffic Prediction</strong> – Designed data visualization dashboards for urban planners.</p>
-            <p><strong>Library Management System</strong> – Led the UI/UX design, improving user retention.</p>
+            <p><strong>AI Shopping Chat Assistant</strong> – Designed immersive UI/UX for virtual fitting room using AI-based outfit visualization.</p>
+            <p><strong>Weight Loss Management Website</strong> – Developed branded, responsive design increasing engagement by 30%.</p>
+            <p><strong>Citywide Traffic Prediction</strong> – Built intuitive dashboards using spatiotemporal models for planners.</p>
+            <p><strong>Library Management System</strong> – Designed accessible multi-device interface improving retention and usability.</p>
         </section>
 
         <section class="resume-section">
             <h2>Certifications & Awards</h2>
-            <p>📜 Adobe Certified Professional – Visual Design (Illustrator)</p>
-            <p>📜 Google UX Design Professional Certificate</p>
-            <p>🏆 Awarded Best UI/UX Project at SRM Institute of Science & Technology</p>
+            <p>📜 Adobe Certified Associate (Graphic Design & Illustration – Illustrator)</p>
+            <p>📜 Adobe Certified Professional (ACP)</p>
+            <p>📜 Complete Web and Mobile Designer: UI/UX, Figma – Udemy</p>
+            <p>🏆 Best UI/UX Project Award – SRM Institute of Science & Technology</p>
         </section>
 
         <section class="resume-section">
             <h2>About Me</h2>
-            <p>Passionate about UI/UX design, branding, and creating user-friendly digital experiences.</p>
-            <p>Active in design communities and continuously learning new trends.</p>
+            <p>Creative designer with a focus on user empathy and visual storytelling. Passionate about building intuitive, inclusive digital products that inspire and delight users. Continuously exploring the intersection of design, motion, and tech.</p>
         </section>
 
-        <!-- Download Resume -->
         <a href="Shanjusha_Kulasekaran_Resume.pdf" download class="btn-primary">Download Resume</a>
     </main>
 
     <script>
-        // Typing Effect for Resume Header
         const text = "Shanjusha Kulasekaran - UI/UX Designer";
         let index = 0;
         function typeEffect() {
@@ -92,6 +96,5 @@
         }
         document.addEventListener("DOMContentLoaded", typeEffect);
     </script>
-
 </body>
 </html>
