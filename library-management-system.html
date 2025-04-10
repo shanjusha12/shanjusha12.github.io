@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+      color: #1f1f1f;
+      line-height: 1.6;
+    }
+    .project-content {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 3rem;
+      background-color: #fff;
+      border-radius: 1.25rem;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+      animation: fadeIn 0.8s ease-in-out;
+      transition: transform 0.3s;
+    }
+    .project-content:hover { transform: scale(1.01); }
+    h1 { font-size: 2.75rem; color: #0073e6; margin-bottom: 1rem; }
+    h2 {
+      font-size: 1.5rem; color: #444;
+      margin-top: 2rem;
+      border-left: 5px solid #0073e6;
+      padding-left: 1rem;
+      transition: color 0.3s ease;
+    }
+    h2:hover { color: #0073e6; }
+    p, ul { font-size: 1.05rem; margin: 1rem 0; }
+    ul { padding-left: 1.5rem; }
+    ul li {
+      margin-bottom: 0.75rem;
+      position: relative;
+    }
+    ul li::before {
+      content: "✔";
+      color: #0073e6;
+      position: absolute;
+      left: -1.5rem;
+      font-weight: bold;
+    }
+    .back-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #0073e6;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .back-button:hover {
+      background-color: #005bb5;
+      transform: translateY(-2px);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <section class="project-content">
+    <h1>Library Management System</h1>
+    <p><strong>Project Type:</strong> Academic</p>
+    <p><strong>Focus:</strong> UI/UX for Educational Tools</p>
+
+    <h2>Overview</h2>
+    <p>A web-based interface to manage digital library systems, designed for ease of use across student and administrative roles.</p>
+
+    <h2>Role</h2>
+    <p><strong>UI/UX Designer</strong> — led the redesign of the interface from wireframes to high-fidelity mockups.</p>
+
+    <h2>Design Approach</h2>
+    <ul>
+      <li>Identified pain points in legacy flows and proposed simplified navigational structures.</li>
+      <li>Focused on making key features like search, renewals, and requests accessible in one click.</li>
+      <li>Created a modular, card-based design for easier information scanning.</li>
+    </ul>
+
+    <h2>Tools Used</h2>
+    <p>Figma · Adobe XD · Accessibility Tools</p>
+
+    <h2>Key Outcomes</h2>
+    <ul>
+      <li>Improved ease of use and reduced cognitive load in core tasks.</li>
+      <li>Built a responsive layout compatible with desktops, tablets, and mobile.</li>
+      <li>Established reusable components to streamline future development.</li>
+    </ul>
+
+    <h2>Skills Applied</h2>
+    <p>Information Architecture · Wireframing · Mobile-First Design · UX Research · Design Systems</p>
+
+    <a href="index.html" class="back-button">← Back to Portfolio</a>
+  </section>
+</body>
+</html>

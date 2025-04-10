@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Shanjusha</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Shanjusha Kulasekaran</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Me</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about-me" class="about-me-section">
+      <h2 class="typewriter-header">
+        <span id="typewriter-text"></span>
+      </h2>
+    
+      <section class="about-me-subsection" id="who-i-am">
+        <div class="who-i-am-container">
+          <div class="profile-image">
+            <img src="grad walk.jpeg" alt="Shanjusha Kulasekaran" />
+          </div>
+          <div class="who-i-am-content">
+            <h3>Who Am I</h3>
+            <p>
+              Hi, I’m Shanjusha — a UI/UX designer with a curious mind, an eye for aesthetics, and a deep love for creating clarity in chaos.<br><br>
+              I’ve always had this instinct to organize, tidy, and make things feel “just right.” Whether it’s a messy desk or an overcomplicated user flow, I naturally move toward structure, balance, and usability. Some call it OCD — I call it my design superpower. It’s what helps me craft interfaces that are clean, intentional, and grounded in logic and beauty.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="about-me-subsection" id="how-i-design">
+        <div class="how-i-design-container">
+          <div class="how-i-design-content">
+            <h3>How I Design</h3>
+            <p>
+              Design, for me, isn’t just about how something looks — it’s about how it works, how it feels, and how effortlessly it fits into someone’s life.<br><br>
+              That same mindset shows up when I’m plating food with care, arranging my files by color, or swimming laps and getting lost in flow. I pay attention to rhythm, structure, and the invisible moments that make an experience seamless.<br><br>
+              I’m drawn to aesthetics in every form — from minimalist spaces to microinteractions. But more than just loving beautiful things, I design with purpose: to solve problems, tell stories, and make digital experiences feel human.<br><br>
+              And when things don’t go as planned? I lean on a quote I live by: <em>“It is what it is.”</em> It reminds me to stay calm, adapt quickly, and keep creating with clarity and intention.
+            </p>
+          </div>
+          <div class="design-image">
+            <img src="about my design.jpeg" alt="Design process or UI concept" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Me Section -->
+<section id="why-choose-me" class="why-choose-me-section">
+  <h2 class="why-title">💡 Why Choose Me?</h2>
+  <div class="why-cards">
+    <div class="why-card red">
+      <h3>I Design with Intent. I Build with Purpose.</h3>
+      <p>Every pixel I place and every line of code I write has one goal: to make digital experiences more thoughtful, intuitive, and beautiful. I come from a computer science background, but I’ve always had a designer’s eye — blending function with form to craft interfaces that feel just right.</p>
+    </div>
+    <div class="why-card blue">
+      <h3>I Wear Multiple Hats — And I Love It.</h3>
+      <p>One day I’m prototyping interfaces in Figma, the next I’m working with Unity or experimenting with TensorFlow to bring an idea to life. I enjoy jumping between design and development because it gives me the full picture — and helps teams move faster and collaborate better.</p>
+    </div>
+    <div class="why-card green">
+      <h3>I’m Always Learning, Always Growing.</h3>
+      <p>I genuinely love picking up new skills — whether it’s exploring real-time rendering, diving into semantic segmentation, or refining my design language. I bring that energy into every project I work on. Because to me, great work comes from staying curious, being open, and never settling for “just okay.”</p>
+    </div>
+  </div>
+</section>
+
+<style>
+.why-choose-me-section {
+  padding: 80px 30px;
+  background: #fdfcff;
+  text-align: center;
+}
+
+.why-title {
+  font-size: 2.6rem;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.why-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+
+.why-card {
+  flex: 1 1 30%;
+  max-width: 100%;
+  color: #fff;
+  border-radius: 16px;
+  padding: 25px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  min-height: 420px;
+}
+
+.why-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.why-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.why-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.why-card.red {
+  background-color: #ff6b6b;
+}
+
+.why-card.blue {
+  background-color: #5f9eff;
+}
+
+.why-card.green {
+  background-color: #38c172;
+}
+
+@media (max-width: 992px) {
+  .why-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-card {
+    width: 90%;
+  }
+}
+</style>
+
+<section class="outside-design-section" id="outside-design-world">
+  <h2 class="outside-title">✨ Outside the Design World</h2>
+  <p class="outside-intro">
+    When I'm not immersed in pixels and prototypes, I explore other passions that keep me inspired and balanced.
+    You'll find me wandering new places, curating my surroundings, practicing calligraphy, or savoring delicious discoveries.
+  </p>
+
+  <!-- TRAVELER AT HEART -->
+  <div class="visual-story travel">
+    <div class="visual-img">
+      <img src="outside the design world.jpeg" alt="Nature moment">
+      <img src="traveller 2.jpeg" alt="City skyline">
+      <img src="traveller .jpeg" alt="Cherry blossom travel">
+    </div>
+    <div class="visual-content">
+      <h3 class="glow-title">Traveler at Heart</h3>
+      <p>
+        I have an endless curiosity about the world, and traveling is my favorite way to satisfy it.
+        Whether it’s a weekend road trip or a journey to a far-off country, I love immersing myself in new cultures and nature.
+        These experiences broaden my perspective and inspire fresh creativity.
+      </p>
+    </div>
+  </div>
+
+  <!-- ORGANIZED SPACES -->
+  <div class="visual-story spaces">
+    <div class="visual-content">
+      <h3 class="glow-title">Organized Spaces, Peaceful Mind</h3>
+      <p>
+        I'm a firm believer that a well-organized space leads to a <strong>clear and creative mind</strong>.
+        Tidying and arranging my surroundings creates a sanctuary where every detail contributes to peace.
+        It's more than neatness — it's clarity.
+      </p>
+    </div>
+    <div class="visual-img">
+      <img src="organized spaces  peaceful mind.jpeg" alt="Tidy workspace">
+      <img src="organised spaces 2.jpeg" alt="Bookshelf with order">
+    </div>
+  </div>
+
+  <!-- CALLIGRAPHY -->
+  <div class="visual-story calligraphy">
+    <div class="visual-img">
+      <img src="calligraphy.jpeg" alt="Scripted names">
+      <img src="calligraphy 2.jpeg" alt="Hand lettering">
+    </div>
+    <div class="visual-content">
+      <h3 class="glow-title">The Art of Calligraphy</h3>
+      <p>
+        Calligraphy is my creative escape — a quiet, hands-on form of design.
+        Every curve and stroke reminds me that <strong>details make all the difference</strong>.
+        It's meditative and beautiful, just like a thoughtful user interface.
+      </p>
+    </div>
+  </div>
+
+  <!-- CULINARY ADVENTURES -->
+  <div class="visual-story culinary">
+    <div class="visual-content">
+      <h3 class="glow-title">Culinary Adventures</h3>
+      <p>
+        I’m a passionate <strong>food explorer</strong>.
+        Whether I'm cooking at home or discovering street food, I love the joy, story, and culture behind every dish.
+        Just like design, it's all about experience.
+      </p>
+    </div>
+    <div class="visual-img">
+      <img src="food.jpeg" alt="Donuts with sprinkles">
+      <img src="food 2.jpeg" alt="Mini samosas with green chili">
+    </div>
+  </div>
+</section>
+
+<style>
+.outside-design-section {
+  background: #fff;
+  padding: 100px 30px;
+  text-align: center;
+}
+
+.outside-title {
+  font-size: 2.7rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #333;
+}
+
+.outside-intro {
+  max-width: 780px;
+  margin: 0 auto 70px;
+  font-size: 1.15rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.visual-story {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.visual-story:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.visual-img {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.visual-img img {
+  width: calc(50% - 10px);
+  max-width: 360px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.visual-img img:hover {
+  transform: scale(1.06);
+}
+
+.visual-content {
+  flex: 1;
+  max-width: 520px;
+  text-align: left;
+}
+
+.visual-content h3 {
+  font-size: 2.1rem;
+  margin-bottom: 18px;
+  color: #222;
+}
+
+.visual-content p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+.glow-title {
+  color: #ff69b4;
+  text-shadow: 0 0 8px rgba(255, 105, 180, 0.6), 0 0 15px rgba(255, 105, 180, 0.3);
+}
+
+@media (max-width: 992px) {
+  .visual-story {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .visual-content {
+    text-align: center;
+  }
+
+  .visual-img {
+    justify-content: center;
+  }
+
+  .visual-img img {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+</style>
+
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2024 Shanjusha Kulasekaran | UI/UX Portfolio</p>
+  </footer>
+
+  <script>
+    const text = "Hello, I'm Shanjusha — a UI/UX designer with a curious mind";
+    const typewriter = document.getElementById('typewriter-text');
+    let i = 0;
+  
+    function typeWriterEffect() {
+      if (i < text.length) {
+        typewriter.textContent += text.charAt(i);
+        i++;
+        setTimeout(typeWriterEffect, 45);
+      }
+    }
+  
+    window.onload = typeWriterEffect;
+  </script>
+  
+
+</body>
+</html>
