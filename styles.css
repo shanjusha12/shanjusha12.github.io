@@ -323,33 +323,70 @@ section {
     color: rgba(11, 11, 11, 0.9);
 }
 
-.about-content {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    align-items: flex-start;
-    margin-top: 1.5rem;
-    flex-wrap: wrap;
+.skills-section {
+  padding: 80px 20px;
+  text-align: center;
 }
 
-.section-image {
-    max-width: 140px;
-    width: 100%;
-    border-radius: 5px;
+.skills-title {
+  font-size: 2.4rem;
+  margin-bottom: 50px;
+  background: linear-gradient(to right, #0d0d0e, #0b0b0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.about-text {
-    flex: 1;
-    min-width: 280px;
+.skills-grid-glass {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.about-section p {
-    font-size: 1.2rem;
-    max-width: 750px;
-    text-align: justify;
-    margin-bottom: 1rem;
-    line-height: 1.6;
+.skill-card-glassy {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.skill-card-glassy:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.skill-card-glassy h3 {
+  margin-bottom: 6px;
+  font-size: 1.3rem;
+  color: #5a3e2b;
+}
+
+.skill-card-glassy p {
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+  color: #555;
+}
+
+.progress-container {
+  width: 100%;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #ffa6b7, #86fde8);
+  transition: width 0.6s ease;
+}
+
 
 .skills-grid {
     display: flex;
@@ -474,58 +511,97 @@ section {
     box-shadow: 0 6px 20px rgba(255, 223, 100, 0.5);
 }
 
-/* Typing Effect */
-.typing-effect {
-    font-size: 2rem;
-    font-weight: bold;
+/* ABOUT ME UPDATED STYLES */
+#about-me.outside-design-section {
+  background: linear-gradient(145deg, #fff4f4, #eaf8ff, #f0ffe5);
+  border-radius: 20px;
+  padding: 100px 20px;
+  margin-top: 40px;
+}
+
+#about-me .outside-title {
+  text-align: center;
+  font-size: 2.6rem;
+  color: #ff6f91;
+  margin-bottom: 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+#about-me .visual-story {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+#about-me .visual-story:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+#about-me .visual-img {
+  flex: 1;
+  max-width: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me .visual-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  transition: transform 0.4s ease-in-out;
+}
+
+#about-me .visual-img img:hover {
+  transform: scale(1.05);
+}
+
+#about-me .visual-content {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+}
+
+#about-me .visual-content h3 {
+  font-size: 1.9rem;
+  margin-bottom: 18px;
+  color: #444;
+  font-weight: 600;
+}
+
+#about-me .visual-content p {
+  font-size: 1.15rem;
+  color: #333;
+  line-height: 1.85;
+  font-weight: 400;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  #about-me .visual-story {
+    flex-direction: column !important;
     text-align: center;
-    color: rgb(13, 13, 13);
-    margin-bottom: 20px;
-    min-height: 50px;
-}
-
-.about-me-fun-section {
-    background-color: #ffe6e6; /* light sticky pink */
-    border: 2px solid #ffcccc;
-    border-radius: 5px;
-    padding: 60px 30px;
-    margin: 80px auto;
-    max-width: 800px;
-    width: 80%;
-    transition: all 0.4s ease-in-out;
-    text-align: center;
-}
-
-.about-me-fun-section:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 20px rgba(255, 179, 186, 0.5);
-}
-
-.about-me-fun-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #222;
-}
-
-.about-me-fun-section p {
-    font-size: 1.2rem;
-    color: #333;
-    line-height: 1.8;
-    text-align: justify;
-}
-
-.about-photo-glow.large-photo {
-    width: 280px;
-    max-width: 100%;
-    border-radius: 1.5rem;
-    box-shadow: 0 0 25px rgba(0, 115, 230, 0.25);
-    transition: transform 0.3s ease;
   }
-  
-  .about-photo-glow.large-photo:hover {
-    transform: scale(1.05);
+
+  #about-me .visual-img img {
+    max-width: 90%;
   }
-  
+
+  #about-me .visual-content h3 {
+    font-size: 1.5rem;
+  }
+
+  #about-me .visual-content p {
+    font-size: 1.05rem;
+  }
+}
+
+
 /* Portfolio Project Sticky Note Card Slider */
 .project-slider-wrapper {
     position: relative;
@@ -834,7 +910,20 @@ section {
     object-fit: cover;
     display: block;
   }
-  
+  .design-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  .design-card img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+    
+
   /* Responsive */
   @media (max-width: 768px) {
     .how-i-design-container {
@@ -979,8 +1068,99 @@ section {
   .view-btn:hover {
     background-color: #0056b3;
   }
-  <style>
 
+  .design-card img {
+    position: relative;
+  }
+  .design-card img::after {
+    content: "Click to view";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+  .design-card:hover img::after {
+    opacity: 1;
+  }
+.design-card img {
+  position: relative;
+}
+.design-card img::after {
+  content: "Click to view";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.design-card:hover img::after {
+  opacity: 1;
+}
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  transform: scale(0.95);
+  animation: zoomIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+  
+.who-i-am-content img,
+.how-i-design-content img {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  border-radius: 0;
+}
+
+.case-detail {
+  background: linear-gradient(145deg, #ffffffee, #f0f4f8ee); /* soft white to pastel */
+  padding: 40px;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
 
   
 
@@ -988,4 +1168,30 @@ section {
     
   
   
-    
+.about-image-enhanced {
+  position: relative;
+  flex: 0 0 400px; /* Set size for the image */
+}
+
+.circular-frame {
+  width: 200px; /* Frame size */
+  height: 200px; /* Frame size */
+  border-radius: 50%; /* Circular frame */
+  border: 12px solid #ffffff; /* White border */
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  overflow: hidden; /* Clip the image overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-photo-glow {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the circle */
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-photo-glow:hover {
+  transform: scale(1.05) rotate(1deg);
+}

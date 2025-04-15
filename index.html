@@ -47,207 +47,209 @@
 <span id="uiux" style="position: relative; top: -100px;"></span>
 
     <main>
-      <section id="about" class="about-section">
-        <h2 class="about-heading">Hi I'm Shanjusha Kulasekaran</h2>
-        <div class="about-content-enhanced">
-          <div class="about-image-enhanced">
-            <img src="Shanjusha Kulasekaran.jpeg" alt="Shanjusha Kulasekaran" class="about-photo-glow large-photo" />
-          </div>
-          <div class="about-text-enhanced">
-            <p class="animated-text">
-              A designer who believes great design should feel as good as it looks. With a background in Information Technology and a passion for creating intuitive interfaces, I simplify complexity and craft digital experiences that speak before words do.
-            </p>
-          </div>
-        </div>
-      </section>
-      
-      
       <style>
-      .about-heading {
-        text-align: center;
-        font-size: 2.8rem;
-        color: #0e0d0e;
-        margin-bottom: 2.5rem;
-        font-family: 'Inter', sans-serif;
-        letter-spacing: 1px;
-        animation: popIn 1s ease-in-out;
-      }
-      
-      .about-content-enhanced {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        gap: 40px;
-        padding: 0 20px;
-        position: relative;
-        overflow: hidden;
-      }
-      
-      .about-text-enhanced {
-        flex: 1;
-        max-width: 600px;
-        font-size: 1.3rem;
-        line-height: 2;
-        color: #333;
-        animation: fadeInUp 1.5s ease-in-out;
-        position: relative;
-        z-index: 2;
-      }
-      
-      .animated-text {
-        background: linear-gradient(to right, #f105f1, hsl(190, 97%, 69%));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 600;
-      }
-      
-      .about-image-enhanced {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        animation: fadeIn 1.5s ease-in-out;
-        z-index: 2;
-      }
-      
-      .about-photo-glow {
-        width: 700px;
-        height: auto;
-        max-width: 100%;
-        border-radius: 20px;
-        box-shadow: 0 0 30px rgba(255, 111, 145, 0.4);
-        transition: transform 0.3s ease-in-out;
-        animation: floatImage 4s ease-in-out infinite;
-      }
-      
-      .about-photo-glow:hover {
-        transform: scale(1.05) rotate(1deg);
-        box-shadow: 0 0 40px rgba(199, 2, 248, 0.6);
-      }
-      
-      .about-section::before, .about-section::after {
-        content: "";
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        background: radial-gradient(circle, #f405bc, hsl(186, 97%, 69%));
-        border-radius: 50%;
-        animation: bounceAround 20s infinite linear;
-        opacity: 0.1;
-        z-index: 0;
-      }
-      
-      .about-section::before {
-        top: -30px;
-        left: -30px;
-      }
-      
-      .about-section::after {
-        bottom: -30px;
-        right: -30px;
-      }
-      
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(40px);
+        body {
+          background: linear-gradient(135deg, #e0f7fa, #ecc2f4); /* Light blue gradient */
+          background-attachment: fixed;
+          font-family: 'Segoe UI', sans-serif;
+          margin: 0;
+          color: #222;
+          transition: background 0.6s ease;
         }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      
-      @keyframes popIn {
-        from {
-          opacity: 0;
-          transform: scale(0.95);
-        }
-        to {
-          opacity: 1;
-          transform: scale(1);
-        }
-      }
-      
-      @keyframes floatImage {
-        0% { transform: translateY(0); }
-        50% { transform: translateY(-10px); }
-        100% { transform: translateY(0); }
-      }
-      
-      @keyframes bounceAround {
-        0% {
-          transform: translate(0, 0);
-        }
-        25% {
-          transform: translate(50vw, 0);
-        }
-        50% {
-          transform: translate(50vw, 50vh);
-        }
-        75% {
-          transform: translate(0, 50vh);
-        }
-        100% {
-          transform: translate(0, 0);
-        }
-      }
-      </style>
-
-        <section id="skills" class="skills-section">
-          <h2 style="text-align:center; margin-bottom: 20px;">Skills</h2>
-          <div class="skills-grid-bar-style">
         
-            <div class="skill-card">
-              <h3>Photoshop</h3>
-              <p>3 years, 10 projects</p>
-              <div class="skill-bars">
-                <span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span>
-                <span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar empty"></span>
-              </div>
+        .about-section {
+          display: flex;
+          flex-direction: column; /* Column layout for title */
+          align-items: center;
+          padding: 80px 10%; /* Adjusted padding for responsiveness */
+          position: relative;
+        }
+        
+        .about-heading {
+          font-size: 3rem;
+          font-family: 'Georgia', serif;
+          font-weight: bold;
+          color: #00796b; /* Dark teal for heading */
+          margin-bottom: 40px;
+        }
+        
+        .about-content-enhanced {
+          display: flex;
+          flex-direction: row; /* Row layout for image and text */
+          justify-content: center;
+          align-items: flex-start; /* Align items to the start */
+          gap: 40px; /* Adjusted gap for better spacing */
+          max-width: 1200px;
+          width: 100%; /* Ensures it fits within the container */
+        }
+        
+        .about-image-enhanced {
+            position: relative;
+            flex: 0 0 400px; /* Set size for the image */
+        }
+        
+        .circular-frame {
+            width: 200px; /* Frame size */
+            height: 200px; /* Frame size */
+            border-radius: 0%; /* Circular frame */
+            border: 12px solid #ffffff; /* White border */
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2); /* Softer shadow */
+            overflow: hidden; /* Clip the image overflow */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .about-photo-glow {
+            width: 100%; /* Make the image responsive */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Ensure the image covers the circle */
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .about-photo-glow:hover {
+            transform: scale(1.05) rotate(1deg);
+        }
+        
+        
+        .about-text-enhanced {
+          max-width: 600px;
+          text-align: left;
+          flex: 1; /* Allow for flexible sizing */
+        }
+        
+        .animated-text {
+          font-size: 1.1rem;
+          color: #004d40; /* Darker teal for text */
+          line-height: 1.8;
+        }
+        
+        @media (max-width: 768px) {
+          .about-content-enhanced {
+            flex-direction: column; /* Stack on smaller screens */
+            gap: 20px; /* Reduced gap for mobile */
+          }
+          .about-text-enhanced {
+            text-align: center;
+          }
+          .about-heading {
+            font-size: 2.5rem; /* Slightly smaller heading for mobile */
+          }
+        }
+        
+        /* Roaming bubble effect */
+        @keyframes bubble {
+          0% {
+            transform: translate(0, 0);
+          }
+          25% {
+            transform: translate(20vw, -20vh);
+          }
+          50% {
+            transform: translate(40vw, 10vh);
+          }
+          75% {
+            transform: translate(10vw, 30vh);
+          }
+          100% {
+            transform: translate(0, 0);
+          }
+        }
+        
+        .bubble {
+          position: absolute;
+          width: 80px;
+          height: 80px;
+          background: radial-gradient(circle, rgba(7, 201, 255, 0.962), rgba(251, 34, 255, 0.973)); /* Gold to orange gradient */
+          border-radius: 50%;
+          animation: bubble 10s infinite ease-in-out;
+          opacity: 0.5;
+          z-index: 0;
+        }
+        
+        .bubble:nth-child(1) {
+          top: 10%;
+          left: 10%;
+          animation-delay: 0s;
+        }
+        
+        .bubble:nth-child(2) {
+          top: 20%;
+          left: 70%;
+          animation-delay: 2s;
+        }
+        
+        .bubble:nth-child(3) {
+          top: 60%;
+          left: 40%;
+          animation-delay: 4s;
+        }
+        
+        .bubble:nth-child(4) {
+          top: 80%;
+          left: 80%;
+          animation-delay: 6s;
+        }
+        
+        </style>
+        
+        <section id="about" class="about-section">
+          <h2 class="about-heading">Hello!</h2>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="bubble"></div>
+          <div class="about-content-enhanced">
+            <div class="about-image-enhanced">
+              <img src="Shanjusha Kulasekaran.jpeg" alt="Shanjusha Kulasekaran" class="about-photo-glow" />
             </div>
-        
-            <div class="skill-card">
-              <h3>Figma</h3>
-              <p>2 years, 6 projects</p>
-              <div class="skill-bars">
-                <span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span>
-                <span class="bar filled"></span><span class="bar filled"></span><span class="bar empty"></span><span class="bar empty"></span><span class="bar empty"></span>
-              </div>
+            <div class="about-text-enhanced">
+              <h3 style="color: #5d3a1a; font-size: 1.4rem; margin-bottom: 10px;">I'm Shanjusha Kulasekaran</h3>
+              <p class="animated-text">
+                a designer who believes great design should feel as good as it looks. Because if it doesn’t connect with people, what’s the point?
+              </p>
             </div>
-        
-            <div class="skill-card">
-              <h3>Illustrator</h3>
-              <p>2 years, 5 projects</p>
-              <div class="skill-bars">
-                <span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span>
-                <span class="bar empty"></span><span class="bar empty"></span><span class="bar empty"></span><span class="bar empty"></span><span class="bar empty"></span>
-              </div>
-            </div>
-        
-            <div class="skill-card">
-              <h3>Sketch</h3>
-              <p>1 year, 3 projects</p>
-              <div class="skill-bars">
-                <span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar empty"></span><span class="bar empty"></span>
-                <span class="bar empty"></span><span class="bar empty"></span><span class="bar empty"></span><span class="bar empty"></span><span class="bar empty"></span>
-              </div>
-            </div>
-        
-            <div class="skill-card">
-              <h3>HTML & CSS</h3>
-              <p>1.5 years, 5 projects</p>
-              <div class="skill-bars">
-                <span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar filled"></span><span class="bar empty"></span>
-                <span class="bar empty"></span><span class="bar empty"></span><span class="bar empty"></span><span class="bar empty"></span><span class="bar empty"></span>
-              </div>
-            </div>
-        
           </div>
         </section>
         
         
+
+<section id="skills" class="skills-section">
+  <h2 class="skills-title">✨ Skills</h2>
+  <div class="skills-grid-glass">
+
+    <div class="skill-card-glassy">
+      <h3>Photoshop</h3>
+      <p>3 years, 10 projects</p>
+      <div class="progress-container"><div class="progress-fill" style="width: 90%;"></div></div>
+    </div>
+
+    <div class="skill-card-glassy">
+      <h3>Figma</h3>
+      <p>2 years, 6 projects</p>
+      <div class="progress-container"><div class="progress-fill" style="width: 70%;"></div></div>
+    </div>
+
+    <div class="skill-card-glassy">
+      <h3>Illustrator</h3>
+      <p>2 years, 5 projects</p>
+      <div class="progress-container"><div class="progress-fill" style="width: 50%;"></div></div>
+    </div>
+
+    <div class="skill-card-glassy">
+      <h3>Sketch</h3>
+      <p>1 year, 3 projects</p>
+      <div class="progress-container"><div class="progress-fill" style="width: 30%;"></div></div>
+    </div>
+
+    <div class="skill-card-glassy">
+      <h3>HTML & CSS</h3>
+      <p>1.5 years, 5 projects</p>
+      <div class="progress-container"><div class="progress-fill" style="width: 40%;"></div></div>
+    </div>
+
+  </div>
+</section>
 
         <section id="experience" class="experience-section">
           <h2 style="text-align:center; margin-bottom: 40px;">Work Experience</h2>
@@ -436,29 +438,8 @@
   background: #554ce0;
 }
 </style>
-
-        
-        
+      
   <style>
-
-.gif-header {
-      position: absolute;
-      top: -60px;
-      left: 20px;
-      z-index: 5;
-    }
-    .floating-gif {
-      width: 200px;
-      height: auto;
-      animation: float 3s ease-in-out infinite;
-      background: transparent;
-      pointer-events: none;
-    }
-    @keyframes float {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-12px); }
-      100% { transform: translateY(0); }
-    }
 
     .portfolio-container {
       padding: 0 20px;
@@ -524,8 +505,8 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      background: #fff3c1;
-      border: 1px solid #f0d678;
+      background: #ff6ec4;
+      border: 1px solid #7873f5;
       padding: 10px;
       border-radius: 50%;
       cursor: pointer;
@@ -569,6 +550,138 @@
       color: #444;
     }
   </style>
+  <style>
+  .portfolio-container {
+    padding: 0 20px;
+    position: relative;
+  }
+  
+  .project-slider-wrapper {
+    position: relative;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 80px 30px 40px;
+    max-width: 1000px;
+    margin: 100px auto;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  }
+  
+  .intro h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ff6ec4, #7873f5, #4ade80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  
+  .project-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .project-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+  
+  .project-card {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .project-content {
+    margin-top: 15px;
+  }
+  
+  .case-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #6c63ff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .case-link:hover {
+    color: #ff5c8a;
+  }
+  
+  .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff3c1;
+    border: 1px solid #f0d678;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 3;
+  }
+  
+  .nav-btn.left {
+    left: 10px;
+  }
+  
+  .nav-btn.right {
+    right: 10px;
+  }
+  
+  .contact-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .contact-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .contact-icons img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f3f3f6;
+    color: #444;
+  }
+  </style>
+  
 </head>
 <body class="minimal-theme">
   <header class="navbar">
@@ -592,9 +705,6 @@
   </header>
   <main class="portfolio-container">
     <section class="project-slider-wrapper">
-      <div class="gif-header">
-        <img src="image.gif" alt="Animated Character" class="floating-gif">
-      </div>
       <section class="intro">
         <h1 style="font-size: 2rem; margin-bottom: 0.5rem;">Projects</h1>
       </section>
@@ -769,6 +879,10 @@
       box-shadow: 0 0 20px #000;
     }
   </style>
+  <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+    <img id="lightbox-img" src="" alt="Expanded view" />
+  </div>
+  
   
   <script>
     function openLightbox(img) {
@@ -927,6 +1041,55 @@
       updateSlider();
     }
   </script>
+  <script>
+    let startX = 0;
+    let isTouching = false;
+  
+    function openLightbox(img) {
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      lightboxImg.src = img.src;
+      lightbox.style.display = "flex";
+      document.body.style.overflow = "hidden"; // prevent background scroll
+    }
+  
+    function closeLightbox(event) {
+      if (event.target.id === 'lightbox' || event.target.tagName === 'IMG') {
+        document.getElementById("lightbox").style.display = "none";
+        document.body.style.overflow = ""; // re-enable background scroll
+      }
+    }
+  
+    function downloadImage(filename) {
+      const link = document.createElement('a');
+      link.href = filename;
+      link.download = filename.split('/').pop();
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  
+    // Swipe detection for mobile
+    document.addEventListener('touchstart', e => {
+      isTouching = true;
+      startX = e.touches[0].clientX;
+    });
+  
+    document.addEventListener('touchmove', e => {
+      if (!isTouching) return;
+      let diffX = e.touches[0].clientX - startX;
+  
+      if (Math.abs(diffX) > 80) {
+        closeLightbox({ target: { id: 'lightbox' } });
+        isTouching = false;
+      }
+    });
+  
+    document.addEventListener('touchend', () => {
+      isTouching = false;
+    });
+  </script>
+  
 
 <section id="contact" class="contact-section">
   <h2>Contact Me</h2>

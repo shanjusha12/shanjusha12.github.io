@@ -6,8 +6,84 @@
     <title>Shanjusha's Resume</title>
     <meta name="description" content="UI/UX Designer | Branding | Motion Graphics">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background: linear-gradient(to bottom right, #ffe4ec, #e0f7fa, #e6ffe4);
+            color: #333;
+        }
+        .navbar {
+            background-color: #ffffffcc;
+            padding: 20px 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar .logo {
+            font-weight: bold;
+            color: #6b4c27;
+        }
+        .navbar a {
+            text-decoration: none;
+            margin-left: 20px;
+            color: #444;
+        }
+        .navbar a.active {
+            color: #6b4c27;
+            font-weight: 600;
+        }
+        .resume-container {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1.typing-effect {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 40px;
+            background: linear-gradient(to right, #a9744f, #5d3a1a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .resume-section {
+            background: linear-gradient(135deg, #fdf6ec, #f7ece1);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .resume-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+        }
+        .resume-section h2 {
+            color: #3a2c1d;
+            margin-bottom: 15px;
+        }
+        .resume-section ul {
+            padding-left: 20px;
+        }
+        .btn-primary {
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+            background: linear-gradient(to right, #e3caa5, #c6b39d);
+            padding: 12px 24px;
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary:hover {
+            background: linear-gradient(to right, #d9b8a1, #bfa48b);
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
     <header class="navbar">
@@ -81,7 +157,7 @@
             <p>Creative designer with a focus on user empathy and visual storytelling. Passionate about building intuitive, inclusive digital products that inspire and delight users. Continuously exploring the intersection of design, motion, and tech.</p>
         </section>
 
-        <a href="Shanjusha_Kulasekaran_Resume.pdf" download class="btn-primary">Download Resume</a>
+        <a href="Shanjusha Kulasekaran Resume.pdf" download class="btn-primary">Download Resume</a>
     </main>
 
     <script>
